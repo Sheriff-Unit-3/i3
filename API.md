@@ -1,6 +1,7 @@
 # API :screwdriver:
 
 ### Table of Contents
+
 1. [**Tabs**](https://github.com/minetest-mods/i3/blob/main/API.md#tabs)
 2. [**Recipes**](https://github.com/minetest-mods/i3/blob/main/API.md#recipes)
 3. [**Minitabs**](https://github.com/minetest-mods/i3/blob/main/API.md#minitabs)
@@ -237,7 +238,7 @@ mode is implemented as a recipe filter.
 Add a recipe filter with the given `name`. The filter function returns the
 recipes to be displayed, given the available recipes and an `ObjectRef` to the
 user. Each recipe is a table of the form returned by
-`minetest.get_craft_recipe`.
+`core.get_craft_recipe`.
 
 Example function to hide recipes for items from a mod called "secretstuff":
 
@@ -277,6 +278,7 @@ Example usages:
   `wood` in their names.
 
 Notes:
+
 - If `optional_name` is omitted, the search filter will apply to all items, without pre-filtering.
 - The `+groups` filter is currently implemented by default.
 
@@ -441,4 +443,4 @@ given a number between 1 and 4.
 
 ---
 
-**[1]** Add `i3` to the `secure.http_mods` or `secure.trusted_mods` setting in `minetest.conf`.
+**[1]** Add `i3` to the `secure.http_mods` or `secure.trusted_mods` setting in `core.conf`.
