@@ -11,59 +11,59 @@ mt3:get_meta():set_string("description", "Worn Pick")
 mt3:get_meta():set_string("color", "yellow")
 mt3:set_wear(10000)
 
-minetest.register_craft {
+core.register_craft({
 	output = mt:to_string(),
 	type = "shapeless",
 	recipe = {
 		"default:wood",
 		mt2:to_string(),
 	},
-}
+})
 
-minetest.register_craft {
+core.register_craft({
 	output = mt3:to_string(),
 	type = "shapeless",
 	recipe = {
 		"default:pick_mese",
 		"default:diamond",
 	},
-}
+})
 
-minetest.clear_craft {
+core.clear_craft({
 	recipe = {
 		{"default:sand", "default:sand"},
 		{"default:sand", "default:sand"},
 	},
-}
+})
 
-i3.register_craft {
-	url = "https://raw.githubusercontent.com/minetest-mods/i3/main/tests/test_online_recipe.json"
-}
+i3.register_craft({
+	url = "https://raw.githubusercontent.com/minetest-mods/i3/main/tests/test_online_recipe.json",
+})
 
-i3.register_craft {
+i3.register_craft({
 	result = "default:ladder_wood 2",
 	items = {"default:copper_ingot 7, default:tin_ingot, default:steel_ingot 2"},
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	result = "default:tree",
 	items = {
 		"default:wood",
 		"",
 		"default:wood"
 	},
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	result = "default:cobble 16",
 	items = {
 		"default:stone, default:stone",
 		"default:stone,              , default:stone",
 		", default:stone, default:stone",
 	}
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X",
 		"#",
@@ -75,9 +75,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X",
 		"#X",
@@ -89,9 +89,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X",
 	},
@@ -100,10 +100,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X#",
 	},
@@ -112,9 +111,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X#X",
 	},
@@ -123,9 +122,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X#XX",
 	},
@@ -134,9 +133,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X#XX",
 		"X#X",
@@ -146,9 +145,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X#XX",
 		"X#X",
@@ -159,9 +158,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X##XX",
 	},
@@ -170,9 +169,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X##X#X",
 	},
@@ -181,9 +180,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X##X#X",
 		"",
@@ -194,9 +193,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -208,9 +207,9 @@ i3.register_craft {
 		['X'] = "default:glass 2",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -222,9 +221,9 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -237,9 +236,9 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -252,10 +251,9 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
 
-
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -269,9 +267,9 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -285,9 +283,9 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -301,9 +299,9 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -317,9 +315,9 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
 
-i3.register_craft {
+i3.register_craft({
 	grid = {
 		"X  #",
 		" ## ",
@@ -335,4 +333,4 @@ i3.register_craft {
 		['X'] = "default:glass",
 	},
 	result = "default:mese 3",
-}
+})
