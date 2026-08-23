@@ -7,6 +7,7 @@ ignore = {
 
 read_globals = {
 	"minetest",
+	"core",
 	"armor",
 	"skins",
 	"awards",
